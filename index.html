@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dipak - Developer Portfolio </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playball&family=Poppins:wght@200;300;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./web-developer.svg" type="image/x-icon">
+ <style>
+body {
+  background-color: rgba(5, 35, 82, 0.997);
+  margin: 0;
+  padding:0;
+  /* overflow: hidden; */
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(35, 31, 116, 0.623);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding-right: 50px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a{
+   text-decoration: none;
+   color: white;
+}
+
+nav ul li a:hover{
+   color: blueviolet;
+}
+
+
+main hr{
+  border: 0;
+  background: #9c97f1;
+  height: 3px;
+  /* margin: 40px 84px; */
+  margin: 0;
+}
+
+.left{
+    font-size: 2rem;
+    padding-left: 150px;
+}
+
+
+.firstSection{
+  display: flex;
+  justify-content: space-around;
+  margin: 80px ;
+}
+
+.leftSection{
+  /* background-color: red; */
+  font-size: 3rem;
+}
+
+.rightSection img{
+  /* background-color: red; */
+  width:90%;
+  /* margin: 50px 0; */
+}
+
+.firstSection > div {
+  width: 30%;
+}
+
+.leftSection{
+  width: 3-%;
+}
+
+.rightSection{
+  width: 30%;
+}
+
+.purple{
+  color: blueviolet;
+}
+
+#element{
+  color: blueviolet;
+}
+.text-gray{
+  color: gray;
+}
+.secondSection{
+  max-width: 80vw;
+  margin: auto;
+  height:80vh;
+}
+.secondSection{
+  font-size: 1.5rem;
+}
+
+hr{
+
+}
+
+.work-experience {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background-color: rgba(5, 35, 82, 0.997);
+        }
+        
+        .experience-box {
+          cursor: pointer;
+          margin-left: 10px;
+            width: 23%;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid black;
+            background-color: #0a81e9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .experience-box:hover{
+          background-color: #c7ae30;
+        }
+        .job-info {
+            font-style: italic;
+            color: black;
+        }
+
+        .vertical-line {
+            width: 1px;
+            background-color: #000;
+            margin: 0 12%;
+        }
+        .spec{
+          margin: 40px;
+        }
+        .line{
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+
+        footer {
+            background-color: rgba(5, 4, 17, 0.08);
+            text-align: center;
+            padding: 1rem;
+        }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="left">Dipak's Portfolio</div>
+   <div class="right">
+    <ul>
+      <li><a href="./">Home</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./services.html">Services</a></li>
+      <li><a href="./blog.html">Blog</a></li>
+      <li><a href="./contact.html">Contact Us</a></li>
+  </ul>
+  
+   </div> 
+   </nav>
+
+   <main>
+    <section class="firstSection">
+        <div class="leftSection">
+          Hi,My name is <span class="purple">Dipak</span>
+          <div>and I am a passionate</div>
+          <!-- <div>Web Developer</div> -->
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+            <img src="./PngItem_1127587 (1).png" alt="logo">
+        </div>
+    </section>
+
+   
+  <h1 class="spec">Work Experience</h1>
+  <hr class="line">
+  
+    <section class="work-experience">
+      <div class="experience-box">
+          <h3>Job Title 1</h3>
+          <p class="job-info">Company A | Location A | Date A</p>
+          <p>Description of your responsibilities and achievements in this role.</p>
+      </div>
+      <div class="experience-box">
+          <h3>Job Title 2</h3>
+          <p class="job-info">Company B | Location B | Date B</p>
+          <p>Description of your responsibilities and achievements in this role.</p>
+      </div>
+      <div class="experience-box">
+          <h3>Job Title 3</h3>
+          <p class="job-info">Company C | Location C | Date C</p>
+          <p>Description of your responsibilities and achievements in this role.</p>
+      </div>
+      <div class="experience-box">
+          <h3>Job Title 4</h3>
+          <p class="job-info">Company D | Location D | Date D</p>
+          <p>Description of your responsibilities and achievements in this role.</p>
+      </div>
+  </section>
+
+   </main>
+    <footer>
+      &copy; 2023 My Portfolio. All rights reserved.
+  </footer>
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+   <script>
+     var typed = new Typed('#element', {
+       strings: ['Web Developer', 'Graphic Designer','Freelancer','UI/UX Designer','Digital Marketer'],
+       typeSpeed: 50,
+     });
+   </script>
+</body>
+</html>
